@@ -26,6 +26,28 @@
       padding: 10px;
       flex-wrap: wrap;
     }
+    .dropdown {
+      postion: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display:block;
+    }
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
     footer {
       text-align: center;
       padding: 30px;
@@ -87,7 +109,16 @@
   <nav>
     <a href="index.html">About</a>
     <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
+
+    <div class="dropdown">
+    <a href="shop.html">Shop</a><div
+    class="dropdown-content">
+     <a href="shirts.html">Shirts</a>
+     <a href="caps.hmtl">Caps</a>
+     <a href="documents.html">Documents</a>
+     </div>
+    </div>
+
     <a href="community.html">Join the Movement</a>
     <a href="contact.html">Contact</a>
   </nav>
