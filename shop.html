@@ -1,157 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Majdi | Shop</title>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      color: #000046;
-    }
-    header {
-      background-color: #66a1a0;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: #000046;
-      padding: 10px;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .dropdown {
-      postion: relative;
-      display: inline-block;
-    }
-    .dropbtn {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 10px;
-    }
-    .dropdown-content a {
-      color: white;
-      padding: 12px 16px;
-      text-decoration: none;
-      display:block;
-    }
-    .dropdown-content a:hover {
-      background-color: #575757;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #66a1a0;
-      color: #fff;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2, h3 {
-      color: #0a2239;
-    }
-    .gallery-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .product-box {
-      width: 220px;
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .product-box img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .buy-button {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: #ffc100;
-      padding: 8px 16px;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>MAJDI</h1>
-    <img src="majdi-logo.jpg" alt="Majdi Logo" width="200">
+    <img src="majdi-logo.jpg" alt="Majdi Logo" width="100">
     <p>Unity. Service. Recovery. Prosperity.</p>
   </header>
 
   <nav>
     <a href="index.html">About</a>
     <a href="gallery.html">Gallery</a>
-
     <div class="dropdown">
-    <a href="shop.html">Shop</a><div
-    class="dropdown-content">
-     <a href="shirts.html">Shirts</a>
-     <a href="caps.hmtl">Caps</a>
-     <a href="documents.html">Documents</a>
-     </div>
+      <a href="shop.html" class="dropbtn">Shop ▾</a>
+      <div class="dropdown-content">
+        <a href="shirts.html">Shirts</a>
+        <a href="caps.html">Caps</a>
+        <a href="documents.html">Documents</a>
+      </div>
     </div>
-
     <a href="community.html">Join the Movement</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="section" id="shop">
-    <h2>Official Shop</h2>
-    <p>Buy exclusive Majdi merchandise and resources to support our mission.</p>
-
-    <div class="gallery-row">
-      <!-- Shirt -->
-      <div class="product-box">
-        <img src="shop/majdi-shirt.jpg" alt="Majdi Shirt">
-        <h3>“Dream Bold” T-Shirt</h3>
-        <p>R200</p>
-        <a href="https://paystack.shop/majdi-store" target="_blank" class="buy-button">Buy Now</a>
-      </div>
-
-      <!-- Cap -->
-      <div class="product-box">
-        <img src="shop/majdi-cap.jpg" alt="Majdi Cap">
-        <h3>Majdi Cap</h3>
-        <p>R150</p>
-        <a href="https://paystack.shop/majdi-store" target="_blank" class="buy-button">Buy Now</a>
-      </div>
-
-      <!-- PDF -->
-      <div class="product-box">
-        <img src="shop/ebook.jpg" alt="100K Blueprint PDF">
-        <h3>100K Blueprint (PDF)</h3>
-        <p>R50</p>
-        <a href="https://paystack.shop/majdi-store" target="_blank" class="buy-button">Buy Now</a>
-      </div>
-    </div>
+  <section class="section">
+    <h2>Shop</h2><p>Select from our categories: Shirts, Caps, and Documents.</p>
   </section>
 
   <footer>
