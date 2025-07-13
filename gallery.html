@@ -6,6 +6,85 @@
   <title>Majdi | Gallery</title>
   <link href="style.css" rel="stylesheet" />
 </head>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #000046;
+    }
+    header {
+     background-color: #66a1a0;
+     color: #fff;
+     padding: 40px 20px;
+     text-align: center;
+    }
+    nav {
+      display: flex;
+     justify-content: center;
+     gap: 30px;
+     background-color: #000046;
+     padding: 10px;
+     flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2, h3 {
+      color: #0a2239;
+    }
+    footer {
+     text-align: center;
+     padding: 30px;
+     background-color: #66a1a0;
+     color: #fff;
+    }
+    .gallery-category {
+      margin-bottom: 40px;
+    }
+    .gallery-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .gallery-row img,
+    .gallery-row video {
+      width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .document-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #ffc100;
+      color: #000;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .document-box {
+  display: block;
+  width: 180px;
+  background-color: #ffc100;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+  </style>
 <body>
   <header>
     <h1>MAJDI</h1>
@@ -30,6 +109,39 @@
 
   <section class="section">
     <h2>Gallery</h2><p>Check out our latest visuals and community highlights.</p>
+  </section>
+
+  <section class="section">
+    <h2>Gallery</h2>
+    <div class="gallery-category">
+      <h3>🎥 Videos</h3>
+      <div class="gallery-row">
+        <video controls>
+          <source src="gallery/clip1.mp4" type="video/mp4">
+        </video>
+        <video controls>
+          <source src="gallery/clip2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="gallery-category"></div>
+      <h3>📝 Inspiration</h3>
+      <div class="gallery-row">
+        <img src="quote-1.jpg" alt="Quote 1">
+        <img src="quote-2.jpg" alt="Quote 2">
+        <img src="quote-3.jpg" alt="Quote 3">
+      </div>
+    </div>
+
+    <div class="gallery-category">
+      <h3>📸 Initiatives</h3>
+      <div class="gallery-row">
+        <img src="pictures/pic1.jpg" alt="Pic 1">
+        <img src="pictures/pic2.jpg" alt="Pic 2">
+        <img src="pictures/pic3.jpg" alt="Pic 3">
+      </div>
+    </div>
   </section>
 
   <footer>
