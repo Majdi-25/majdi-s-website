@@ -108,6 +108,7 @@ footer {
 }
 
 
+HEAD
 /* Dropdown menu styles */
 .nav-menu {
   list-style: none;
@@ -153,4 +154,36 @@ footer {
 .nav-menu .dropdown-menu a:hover {
   background-color: #ffc100;
   color: #000;
+}
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('background.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.majdi-signature {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
 }
