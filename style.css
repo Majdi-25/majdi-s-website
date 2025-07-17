@@ -54,7 +54,7 @@ nav a {
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: #575757;
+  background-color: #ffffffff;
 }
 .dropdown:hover .dropdown-content {
   display: block;
