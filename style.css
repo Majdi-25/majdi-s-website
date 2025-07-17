@@ -19,29 +19,17 @@ header h1 {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   background-color: #000046;
-  padding: 10px;
-  flex-wrap: wrap;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* NAV MENU (Dropdown System in Use) */
 .nav-menu {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 0;
-  padding: 0;
-  background-color: #000046;
+  padding: 10px;
 }
 
 .nav-menu li {
@@ -64,7 +52,7 @@ nav a {
   left: 0;
   min-width: 200px;
   border-radius: 5px;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .nav-menu .dropdown-menu li {
