@@ -14,39 +14,13 @@
   <div class="header-top">
     <img src="images/ubuntu path-logo2.jpg" alt="Ubuntu Path" class="logo side-logo">
   </div>
-  <h1 class="motto">For All South Africans.</h1>
+  <h1 class="motto">For All South Africans!</h1>
 </header>
 
 <nav>
   <ul class="nav-menu">
 
     <li><a href="index.html">About</a></li>
-
-    <!-- MAJDI DROPDOWN -->
-    <li class="dropdown">
-      <a href="majdi.html" class="dropbtn">Majdi ▾</a>
-      <ul class="dropdown-content majdi-dropdown">
-        <li><a href="inspiration.html">Inspiration</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="affiliates.html">Affiliates</a></li>
-      </ul>
-    </li>
-
-    <!-- MAJDIAID DROPDOWN -->
-    <li class="dropdown">
-      <a href="majdiaid.html" class="dropbtn">MajdiAid ▾</a>
-      <ul class="dropdown-content majdiaid-dropdown">
-        <li><a href="majdiaidgallery.html">Gallery</a></li>
-        <li><a href="majdiaidevents.html">Events</a></li>
-        <li><a href="majdiaidshop.html">Shop</a></li>
-        <li><a href="majdiaiddocuments.html">Documents</a></li>
-        <li><a href="majdiaidcommunity.html">Join the Movement</a></li>
-        <li><a href="majdiaiddonations.html">Contributions</a></li>
-        <li><a href="majdiaidvolunteers.html">Volunteers</a></li>
-        <li><a href="majdiaidmemberships.html">Membership</a></li>
-      </ul>
-    </li>
 
     <!-- UBUNTU DROPDOWN -->
     <li class="dropdown">
@@ -63,8 +37,36 @@
 </nav>
 
 <section class="section">
+  <h2>Become a Member</h2>
+  <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
+<form action="mailto:majdiwilliams@gmail.com" method="post" enctype="text/plain" class="membership-form">
+  <label for="fullName">Full Name *</label><br>
+  <input type="text" id="fullName" name="fullName" required><br><br>
 
+  <label for="email">Email Address *</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone Number</label><br>
+  <input type="tel" id="phone" name="phone"><br><br>
+
+  <label for="address">Physical Address</label><br>
+  <textarea id="address" name="address" rows="3"></textarea><br><br>
+
+  <label for="membershipType">Membership Type *</label><br>
+  <select id="membershipType" name="membershipType" required>
+    <option value="">Select Type</option>
+    <option value="Standard">Standard</option>
+    <option value="Premium">Premium</option>
+    <option value="Lifetime">Lifetime</option>
+  </select><br><br>
+
+  <label for="reason">Why do you want to join?</label><br>
+  <textarea id="reason" name="reason" rows="4"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
 
 </section>
 

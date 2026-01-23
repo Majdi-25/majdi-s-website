@@ -325,6 +325,119 @@ footer {
   cursor: pointer;
 }
 
+/* ============================================================
+   UBUNTU Membership Form
+   ============================================================ */
+
+/* Ubuntu Membership Form Styling */
+.ubuntu-page .membership-form {
+  background-color: rgba(241, 237, 225, 0.1); /* slightly cream transparent */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.ubuntu-page .membership-form input,
+.ubuntu-page .membership-form select,
+.ubuntu-page .membership-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.ubuntu-page .membership-form input[type="submit"],
+.ubuntu-page .membership-form input[type="reset"] {
+  width: 48%;
+  background-color: #103349; /* navy */
+  color: #F1EDE1; /* cream */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 0;
+  margin-right: 4%;
+  transition: all 0.3s ease;
+}
+
+.ubuntu-page .membership-form input[type="submit"]:hover,
+.ubuntu-page .membership-form input[type="reset"]:hover {
+  background-color: #66a1a0; /* teal */
+  color: #103349; /* navy */
+}
+
+.ubuntu-page .membership-form textarea {
+  resize: vertical;
+}
+
+/* ============================================================
+   UBUNTU Donation Form
+   ============================================================ */
+
+.ubuntu-page .donation-form {
+  background-color: rgba(241, 237, 225, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  color: #fff;
+}
+
+.ubuntu-page .donation-form input,
+.ubuntu-page .donation-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.ubuntu-page .donation-form textarea {
+  resize: vertical;
+}
+
+.ubuntu-page .donation-form input[type="submit"],
+.ubuntu-page .donation-form input[type="reset"] {
+  width: 48%;
+  background-color: #103349;
+  color: #F1EDE1;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 0;
+  margin-right: 4%;
+  transition: all 0.3s ease;
+}
+
+.ubuntu-page .donation-form input[type="submit"]:hover,
+.ubuntu-page .donation-form input[type="reset"]:hover {
+  background-color: #66a1a0;
+  color: #103349;
+}
+
+/* EFT Info Box */
+.ubuntu-page .eft-box {
+  background-color: rgba(16, 51, 73, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+}
+
+.ubuntu-page .eft-box h3 {
+  margin-top: 0;
+  color: #F1EDE1;
+}
+
 
 /* ============================================================
    MAJDIAID THEME
