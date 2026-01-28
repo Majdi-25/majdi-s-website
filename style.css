@@ -469,6 +469,15 @@ footer {
   color: #FFFFFF;
 }
 
+.majdiaid-page .dropdown-menu a {
+  color: #FFFFFF;
+}
+
+.majdiaid-page footer {
+  background-color: #FFFFFF;
+  color: #66a1a0;
+}
+
 /* ==========================
    MAJDIAID DROPDOWN OVERRIDE
    ========================== */
