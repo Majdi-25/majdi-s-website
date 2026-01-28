@@ -63,76 +63,57 @@
 </nav>
 
 <section class="section">
+  <h2>Become a Member</h2>
+  <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
-<h2>Make a Contribution</h2>
-<p>
-Your contribution helps build a united, empowered South Africa.
-Please complete the form below and make your contribution via EFT.
-</p>
+  <form class="membership-form"
+        action="https://formspree.io/f/maqjyyed"
+        method="POST">
 
-<form class="donation-form"
-      action="https://formspree.io/f/xkobngok"
-      method="POST">
+    <!-- Honeypot (anti-spam, invisible to users) -->
+    <input type="text" name="_gotcha" style="display:none">
 
-  <!-- Anti-spam honeypot -->
-  <input type="text" name="_gotcha" style="display:none">
+    <!-- Optional email subject -->
+    <input type="hidden" name="_subject" value="New Ubuntu Path Membership Signup">
 
-  <!-- Email subject -->
-  <input type="hidden" name="_subject" value="New Ubuntu Path Donation Intent">
+    <!-- Optional redirect after success -->
+    <input type="hidden" name="_redirect" value="thank-you.html">
 
-  <label for="donorName">Full Name *</label>
-  <input type="text" id="donorName" name="donor_name" required>
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="fullName" required>
 
-  <label for="email">Email Address *</label>
-  <input type="email" id="email" name="email" required>
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
 
-  <label for="amount">Contribution Amount (ZAR) *</label>
-  <input type="number" id="amount" name="amount_zar" required>
+    <label for="phone">Mobile Number</label>
+    <input type="tel" id="phone" name="phone">
 
-  <label for="reference">Preferred Payment Reference</label>
-  <input type="text" id="reference" name="payment_reference" placeholder="Your Name + Donation">
+    <label for="province">Province</label>
+    <select id="province" name="province">
+      <option value="">Select province</option>
+      <option>Western Cape</option>
+      <option>Eastern Cape</option>
+      <option>Gauteng</option>
+      <option>KwaZulu-Natal</option>
+      <option>Limpopo</option>
+      <option>Mpumalanga</option>
+      <option>North West</option>
+      <option>Northern Cape</option>
+      <option>Free State</option>
+    </select>
 
-  <label for="message">Message (Optional)</label>
-  <textarea id="message" name="message" rows="4"></textarea>
+    <label for="donation">Optional Initial Donation (ZAR)</label>
+    <input type="number" id="donation" name="donation" min="0" placeholder="e.g. 50">
 
-  <div class="eft-box">
-    <h3>EFT Banking Details</h3>
-    <p>
-      <strong>Bank:</strong> Capitec Business<br>
-      <strong>Account Name:</strong> UbuntPath<br>
-      <strong>Account Number:</strong> 2491028219<br>
-      <strong>Branch Code:</strong> 470010<br><br>
-      <strong>Reference:</strong> Your Name + Donation
-    </p>
-  </div>
+    <label for="message">Why do you want to join Ubuntu Path? (optional)</label>
+    <textarea id="message" name="message" rows="4"></textarea>
 
-  <!-- Donation Disclaimer -->
-  <div class="donation-disclaimer">
-    <p>
-      <strong>Important Notice:</strong><br>
-      Ubuntu Path is currently in the process of formal registration as a non-profit entity.
-      All contributions at this stage are made voluntarily and are used strictly to support
-      organisational development, outreach, and community engagement activities.
-    </p>
+    <button type="submit">Join Ubuntu Path</button>
+    <button type="reset">Clear</button>
 
-    <p>
-      Contributions are <strong>non-refundable</strong> unless otherwise required by law.
-      Donating does not constitute membership, voting rights, or any contractual obligation.
-    </p>
-
-    <p>
-      By submitting this form, you confirm that the information provided is accurate and that
-      you are making this contribution of your own free will.
-    </p>
-  </div>
-
-  <button type="submit">Submit Contribution</button>
-  <button type="reset">Clear Form</button>
-
-</form>
+  </form>
 
 </section>
-
 
 <footer>
   <p>&copy; 2025 MajdiAid. All Rights Reserved.</p>

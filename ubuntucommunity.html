@@ -63,55 +63,77 @@
 </nav>
 
 <section class="section">
-  <h2>Become a Member</h2>
-  <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
-  <form class="membership-form"
-        action="https://formspree.io/f/maqjyyed"
-        method="POST">
+<h2>Become a Member</h2>
+<p>
+Join Ubuntu Path and be part of a movement for unity, empowerment, and change in South Africa.
+</p>
 
-    <!-- Honeypot (anti-spam, invisible to users) -->
-    <input type="text" name="_gotcha" style="display:none">
+<form class="membership-form"
+      action="https://formspree.io/f/maqjyyed"
+      method="POST">
 
-    <!-- Optional email subject -->
-    <input type="hidden" name="_subject" value="New Ubuntu Path Membership Signup">
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
 
-    <!-- Optional redirect after success -->
-    <input type="hidden" name="_redirect" value="thank-you.html">
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New Ubuntu Path Membership Signup">
 
-    <label for="fullName">Full Name *</label>
-    <input type="text" id="fullName" name="fullName" required>
+  <!-- Redirect after success -->
+  <input type="hidden" name="_next" value="Ubuntuthankyou.html">
 
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="email" required>
+  <label for="fullName">Full Name *</label>
+  <input type="text" id="fullName" name="full_name" required>
 
-    <label for="phone">Mobile Number</label>
-    <input type="tel" id="phone" name="phone">
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" required>
 
-    <label for="province">Province</label>
-    <select id="province" name="province">
-      <option value="">Select province</option>
-      <option>Western Cape</option>
-      <option>Eastern Cape</option>
-      <option>Gauteng</option>
-      <option>KwaZulu-Natal</option>
-      <option>Limpopo</option>
-      <option>Mpumalanga</option>
-      <option>North West</option>
-      <option>Northern Cape</option>
-      <option>Free State</option>
-    </select>
+  <label for="phone">Mobile Number</label>
+  <input type="tel" id="phone" name="phone">
 
-    <label for="donation">Optional Initial Donation (ZAR)</label>
-    <input type="number" id="donation" name="donation" min="0" placeholder="e.g. 50">
+  <label for="province">Province</label>
+  <select id="province" name="province">
+    <option value="">Select province</option>
+    <option>Western Cape</option>
+    <option>Eastern Cape</option>
+    <option>Gauteng</option>
+    <option>KwaZulu-Natal</option>
+    <option>Limpopo</option>
+    <option>Mpumalanga</option>
+    <option>North West</option>
+    <option>Northern Cape</option>
+    <option>Free State</option>
+  </select>
 
-    <label for="message">Why do you want to join Ubuntu Path? (optional)</label>
-    <textarea id="message" name="message" rows="4"></textarea>
+  <label for="donation">Optional Initial Donation (ZAR)</label>
+  <input type="number" id="donation" name="optional_donation" min="0" placeholder="e.g. 50">
 
-    <button type="submit">Join Ubuntu Path</button>
-    <button type="reset">Clear</button>
+  <label for="message">Why do you want to join Ubuntu Path? (optional)</label>
+  <textarea id="message" name="message" rows="4"></textarea>
 
-  </form>
+  <!-- Membership Disclaimer -->
+  <div class="donation-disclaimer">
+    <p>
+      <strong>Membership Notice:</strong><br>
+      Submitting this form registers your interest in the Ubuntu Path movement.
+      Membership is voluntary and subject to organisational guidelines.
+    </p>
+
+    <p>
+      Any optional donation is made freely and does not guarantee leadership roles,
+      decision-making authority, or material benefit.
+    </p>
+
+    <p>
+      By submitting this form, you confirm that the information provided is accurate
+      and that you support the peaceful, lawful objectives of Ubuntu Path.
+    </p>
+  </div>
+
+  <button type="submit">Join Ubuntu Path</button>
+  <button type="reset">Clear</button>
+
+</form>
 
 </section>
 
