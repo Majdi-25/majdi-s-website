@@ -444,38 +444,38 @@ footer {
    ============================================================ */
 
 .majdiaid-page {
-  background-color: #66a1a0;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #0000EF;
 }
 
 .majdiaid-page .logo-motto {
-  background-color: #66a1a0;
+  background-color: #fff;
 }
 
 .majdiaid-page .motto {
-  color: #FFFFFF;
+  color: #0000EF;
 }
 
 .majdiaid-page nav {
-  background-color: #FFFFFF;
+  background-color: #0000EF;
 }
 
 .majdiaid-page .nav-menu a {
-  color: #66a1a0;
+  color: #fff;
 }
 
 .majdiaid-page .nav-menu a:hover {
-  background-color: #66a1a0;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #0000EF;
 }
 
 .majdiaid-page .dropdown-menu a {
-  color: #FFFFFF;
+  color: #0000EF;
 }
 
 .majdiaid-page footer {
-  background-color: #FFFFFF;
-  color: #66a1a0;
+  background-color: #0000EF;
+  color: #fff;
 }
 
 /* ==========================
@@ -483,7 +483,7 @@ footer {
    ========================== */
 
 .majdiaid-page .dropdown-content {
-  background-color: #FFFFFF !important;  /* white background */
+  background-color: #0000EF !important;  /* white background */
   border: 1px solid rgba(0,0,0,0.15);
   min-width: 200px;
   border-radius: 4px;
@@ -497,7 +497,7 @@ footer {
 }
 
 .majdiaid-page .dropdown-content li a {
-  color: #66a1a0 !important;             /* blue text */
+  color: #fff !important;             /* blue text */
   padding: 12px 16px;
   display: block;
   background-color: transparent;
@@ -510,8 +510,8 @@ footer {
 }
 
 .majdiaid-page .dropdown-content li a:hover {
-  background-color: #66a1a0 !important;  /* blue */
-  color: #FFFFFF !important;             /* white */
+  background-color: #fff !important;  /* blue */
+  color: #0000EF !important;             /* white */
 }
 
 .majdiaid-page .dropbtn {
