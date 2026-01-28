@@ -66,7 +66,18 @@
   <h2>Become a Member</h2>
   <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
-  <form class="membership-form" action="#" method="post">
+  <form class="membership-form"
+        action="https://formspree.io/f/maqjyyed"
+        method="POST">
+
+    <!-- Honeypot (anti-spam, invisible to users) -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Optional email subject -->
+    <input type="hidden" name="_subject" value="New Ubuntu Path Membership Signup">
+
+    <!-- Optional redirect after success -->
+    <input type="hidden" name="_redirect" value="thank-you.html">
 
     <label for="fullName">Full Name *</label>
     <input type="text" id="fullName" name="fullName" required>
@@ -94,11 +105,11 @@
     <label for="donation">Optional Initial Donation (ZAR)</label>
     <input type="number" id="donation" name="donation" min="0" placeholder="e.g. 50">
 
-    <label for="message">Why do you want to join UbuntuPath? (optional)</label>
+    <label for="message">Why do you want to join Ubuntu Path? (optional)</label>
     <textarea id="message" name="message" rows="4"></textarea>
 
-    <input type="submit" value="Join UbuntuPath">
-    <input type="reset" value="Clear">
+    <button type="submit">Join Ubuntu Path</button>
+    <button type="reset">Clear</button>
 
   </form>
 
