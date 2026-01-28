@@ -62,7 +62,46 @@
   </ul>
 </nav>
 
-<section class="section">
+<section class="section ubuntu-page">
+  <h2>Join the UbuntuPath Movement</h2>
+  <p>Become part of a people-led movement committed to dignity, justice, and shared prosperity. <br> 
+    Membership is free. An initial donation is optional and helps support our work.</p>
+
+  <form class="membership-form" action="#" method="post">
+
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Mobile Number</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="province">Province</label>
+    <select id="province" name="province">
+      <option value="">Select province</option>
+      <option>Western Cape</option>
+      <option>Eastern Cape</option>
+      <option>Gauteng</option>
+      <option>KwaZulu-Natal</option>
+      <option>Limpopo</option>
+      <option>Mpumalanga</option>
+      <option>North West</option>
+      <option>Northern Cape</option>
+      <option>Free State</option>
+    </select>
+
+    <label for="donation">Optional Initial Donation (ZAR)</label>
+    <input type="number" id="donation" name="donation" min="0" placeholder="e.g. 50">
+
+    <label for="message">Why do you want to join UbuntuPath? (optional)</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Join UbuntuPath">
+    <input type="reset" value="Clear">
+
+  </form>
 </section>
 
 <footer>
