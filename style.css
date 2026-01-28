@@ -1,0 +1,631 @@
+/* ============================================================
+   GLOBAL BASE STYLES
+   ============================================================ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #66a1a0; /* default teal */
+  color: #fff;
+}
+
+
+/* ============================================================
+   HEADER & LOGO SECTION
+   ============================================================ */
+
+header.logo-motto {
+  background-color: #F1EDE1; /* cream */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  margin: 0 40px;
+  object-fit: contain;
+}
+
+.logo-motto .header-top img {
+  width: 180px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.motto {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin: 5px 0 0 0;
+  color: #103349; /* navy default */
+}
+
+
+/* ============================================================
+   NAVIGATION MENU
+   ============================================================ */
+
+nav {
+  background-color: #103349; /* navy */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+  font-weight: bold;
+}
+
+
+/* -------------------------
+   DROPDOWN MENU
+   ------------------------- */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #103349; /* navy */
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 2px;
+}
+
+.nav-menu .dropdown:hover > .dropdown-menu,
+.dropdown-menu li:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #66a1a0; /* teal */
+  color: #000;
+}
+
+/* Child links */
+.dropdown-menu li.sub-item a {
+  padding-left: 30px;
+  font-size: 0.95rem;
+  color: #66a1a0;
+}
+
+.dropdown-menu li.sub-item a:hover {
+  background-color: #fff;
+  color: #103349;
+}
+
+.dropdown-menu .dropdown-menu a {
+  color: #66a1a0;
+}
+
+.dropdown-menu .dropdown-menu a:hover {
+  background-color: #fff;
+  color: #103349;
+}
+
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+
+.section {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: auto;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section ul {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+.section ul li {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.section h3 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+
+.gallery-scroll-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+.gallery-scroll-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-scroll-row::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  width: 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-item video,
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: #103349;
+  color: white;
+}
+
+
+/* ============================================================
+   UBUNTU THEME (FIXED — YOUR COLOURS EXACT)
+   ============================================================ */
+
+.ubuntu-page {
+  background-color: #66a1a0; /* teal */
+  color: white;
+}
+
+.ubuntu-page header.logo-motto {
+  background-color: #F1EDE1 !important; /* cream */
+}
+
+.ubuntu-page .motto {
+  color: #103349 !important; /* navy */
+}
+
+.ubuntu-page nav {
+  background-color: #103349;
+}
+
+.ubuntu-page .nav-menu a {
+  color: #F1EDE1; /* cream */
+}
+
+.ubuntu-page .nav-menu a:hover {
+  background-color: #66a1a0; /* teal */
+  color: #103349;            /* navy */
+}
+
+.ubuntu-page .section {
+  background-color: #66a1a0; /* teal */
+  color: white;
+}
+
+.ubuntu-page .section h2,
+.ubuntu-page .section h3 {
+  color: white;
+}
+
+.ubuntu-page footer {
+  background-color: #103349;
+  color: #F1EDE1;
+}
+
+/* ============================================================
+   UBUNTU DROPDOWN (NEW)
+   ============================================================ */
+
+.nav-menu .dropdown {
+  position: relative;
+}
+
+/* main dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #103349; /* navy */
+  min-width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* dropdown links */
+.dropdown-content li a {
+  display: block;
+  padding: 12px 16px;
+  color: #F1EDE1;          /* cream */
+  text-decoration: none;
+  font-weight: normal;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* last item: remove divider */
+.dropdown-content li:last-child a {
+  border-bottom: none;
+}
+
+/* hover effect */
+.dropdown-content li a:hover {
+  background-color: #66a1a0; /* teal */
+  color: #103349;            /* navy */
+}
+
+/* dropdown toggle arrow */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* ============================================================
+   UBUNTU Membership Form
+   ============================================================ */
+
+/* Ubuntu Membership Form Styling */
+.ubuntu-page .membership-form {
+  background-color: rgba(241, 237, 225, 0.1); /* slightly cream transparent */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.ubuntu-page .membership-form input,
+.ubuntu-page .membership-form select,
+.ubuntu-page .membership-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.ubuntu-page .membership-form input[type="submit"],
+.ubuntu-page .membership-form input[type="reset"] {
+  width: 48%;
+  background-color: #103349; /* navy */
+  color: #F1EDE1; /* cream */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 0;
+  margin-right: 4%;
+  transition: all 0.3s ease;
+}
+
+.ubuntu-page .membership-form input[type="submit"]:hover,
+.ubuntu-page .membership-form input[type="reset"]:hover {
+  background-color: #66a1a0; /* teal */
+  color: #103349; /* navy */
+}
+
+.ubuntu-page .membership-form textarea {
+  resize: vertical;
+}
+
+/* ============================================================
+   UBUNTU Donation Form
+   ============================================================ */
+
+.ubuntu-page .donation-form {
+  background-color: rgba(241, 237, 225, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  color: #fff;
+}
+
+.ubuntu-page .donation-form input,
+.ubuntu-page .donation-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.ubuntu-page .donation-form textarea {
+  resize: vertical;
+}
+
+.ubuntu-page .donation-form input[type="submit"],
+.ubuntu-page .donation-form input[type="reset"] {
+  width: 48%;
+  background-color: #103349;
+  color: #F1EDE1;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 0;
+  margin-right: 4%;
+  transition: all 0.3s ease;
+}
+
+.ubuntu-page .donation-form input[type="submit"]:hover,
+.ubuntu-page .donation-form input[type="reset"]:hover {
+  background-color: #66a1a0;
+  color: #103349;
+}
+
+/* EFT Info Box */
+.ubuntu-page .eft-box {
+  background-color: rgba(16, 51, 73, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+}
+
+.ubuntu-page .eft-box h3 {
+  margin-top: 0;
+  color: #F1EDE1;
+}
+
+
+/* ============================================================
+   MAJDIAID THEME
+   ============================================================ */
+
+.majdiaid-page {
+  background-color: #0000EF;
+  color: #FFFFFF;
+}
+
+.majdiaid-page .logo-motto {
+  background-color: #0000EF;
+}
+
+.majdiaid-page .motto {
+  color: #FFFFFF;
+}
+
+.majdiaid-page nav {
+  background-color: #FFFFFF;
+}
+
+.majdiaid-page .nav-menu a {
+  color: #0000EF;
+}
+
+.majdiaid-page .nav-menu a:hover {
+  background-color: #0000EF;
+  color: #FFFFFF;
+}
+
+.majdiaid-page .dropdown-menu a {
+  color: #FFFFFF;
+}
+
+.majdiaid-page footer {
+  background-color: #FFFFFF;
+  color: #0000EF;
+}
+
+/* ============================================================
+   MAJDIAID THEME
+   ============================================================ */
+
+.majdiaid-page {
+  background-color: #0000EF;
+  color: #FFFFFF;
+}
+
+.majdiaid-page .logo-motto {
+  background-color: #0000EF;
+}
+
+.majdiaid-page .motto {
+  color: #FFFFFF;
+}
+
+.majdiaid-page nav {
+  background-color: #FFFFFF;
+}
+
+.majdiaid-page .nav-menu a {
+  color: #0000EF;
+}
+
+.majdiaid-page .nav-menu a:hover {
+  background-color: #0000EF;
+  color: #FFFFFF;
+}
+
+/* ==========================
+   MAJDIAID DROPDOWN OVERRIDE
+   ========================== */
+
+.majdiaid-page .dropdown-content {
+  background-color: #FFFFFF !important;  /* white background */
+  border: 1px solid rgba(0,0,0,0.15);
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  list-style: none;
+}
+
+.majdiaid-page .dropdown-content li a {
+  color: #0000EF !important;             /* blue text */
+  padding: 12px 16px;
+  display: block;
+  background-color: transparent;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.majdiaid-page .dropdown-content li:last-child a {
+  border-bottom: none;
+}
+
+.majdiaid-page .dropdown-content li a:hover {
+  background-color: #0000EF !important;  /* blue */
+  color: #FFFFFF !important;             /* white */
+}
+
+.majdiaid-page .dropbtn {
+  cursor: pointer;
+}
+
+
+/* ============================================================
+   MAJDI THEME
+   ============================================================ */
+
+.majdi-page {
+  background-color: #0F2A3D;
+  color: #F8F4EC;
+}
+
+.majdi-page .logo-motto {
+  background-color: #0F2A3D;
+}
+
+.majdi-page .motto {
+  color: #D4A73C;
+}
+
+.majdi-page nav {
+  background-color: #D4A73C;
+}
+
+.majdi-page .nav-menu a {
+  color: #0F2A3D;
+  font-weight: bold;
+}
+
+.majdi-page .nav-menu a:hover {
+  background-color: #0F2A3D;
+  color: #D4A73C;
+}
+
+.majdi-page footer {
+  background-color: #D4A73C;
+  color: #0F2A3D;
+}
+
+
+/* ============================================================
+   MAJDI DROPDOWN (Gold Background)
+   ============================================================ */
+
+.majdi-page .dropdown-content {
+  background-color: #D4A73C !important;  /* gold */
+  min-width: 200px;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* dropdown links */
+.majdi-page .dropdown-content li a {
+  color: #0F2A3D !important;             /* navy text */
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+/* remove last border */
+.majdi-page .dropdown-content li:last-child a {
+  border-bottom: none;
+}
+
+/* hover */
+.majdi-page .dropdown-content li a:hover {
+  background-color: #0F2A3D !important;  /* navy */
+  color: #D4A73C !important;             /* gold */
+}
+
+/* dropdown cursor */
+.majdi-page .dropbtn {
+  cursor: pointer;
+}

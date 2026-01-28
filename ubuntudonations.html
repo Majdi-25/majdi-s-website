@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UbuntuPath | Contributions</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="ubuntu-page">
+
+<header class="logo-motto">
+  <div class="header-top">
+    <img src="images/ubuntu path-logo2.jpg" alt="Ubuntu Path" class="logo side-logo">
+  </div>
+  <h1 class="motto">For All South Africans.</h1>
+</header>
+
+<nav>
+  <ul class="nav-menu">
+
+    <li><a href="index.html">About</a></li>
+
+    <!-- MAJDI DROPDOWN -->
+    <li class="dropdown">
+      <a href="majdi.html" class="dropbtn">Majdi ▾</a>
+      <ul class="dropdown-content majdi-dropdown">
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="affiliates.html">Affiliates</a></li>
+      </ul>
+    </li>
+
+    <!-- MAJDIAID DROPDOWN -->
+    <li class="dropdown">
+      <a href="majdiaid.html" class="dropbtn">MajdiAid ▾</a>
+      <ul class="dropdown-content majdiaid-dropdown">
+        <li><a href="majdiaidgallery.html">Gallery</a></li>
+        <li><a href="majdiaidevents.html">Events</a></li>
+        <li><a href="majdiaidshop.html">Shop</a></li>
+        <li><a href="majdiaiddocuments.html">Documents</a></li>
+        <li><a href="majdiaidcommunity.html">Join the Movement</a></li>
+        <li><a href="majdiaiddonations.html">Contributions</a></li>
+        <li><a href="majdiaidvolunteers.html">Volunteers</a></li>
+        <li><a href="majdiaidmemberships.html">Membership</a></li>
+      </ul>
+    </li>
+
+    <!-- UBUNTU DROPDOWN -->
+    <li class="dropdown">
+      <a href="ubuntupath.html" class="dropbtn">UbuntuPath ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="ubuntucommunity.html">Join the Movement/Membership</a></li>
+        <li><a href="ubuntudonations.html">Contributions/Volunteers</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+</nav>
+
+<section class="section">
+
+<h2>Make a Contribution</h2>
+<p>
+Your contribution helps build a united, empowered South Africa.
+Please complete the form below and make your contribution via EFT.
+</p>
+
+<form action="mailto:majdiwilliams@gmail.com" method="post" enctype="text/plain" class="donation-form">
+
+  <label for="donorName">Full Name *</label>
+  <input type="text" id="donorName" name="Full Name" required>
+
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="Email" required>
+
+  <label for="amount">Contribution Amount (ZAR) *</label>
+  <input type="number" id="amount" name="Amount (ZAR)" required>
+
+  <label for="reference">Preferred Payment Reference</label>
+  <input type="text" id="reference" name="Payment Reference" placeholder="Your Name + Donation">
+
+  <label for="message">Message (Optional)</label>
+  <textarea id="message" name="Message" rows="4"></textarea>
+
+  <div class="eft-box">
+    <h3>EFT Banking Details</h3>
+    <p>
+      <strong>Bank:</strong> [Your Bank Name]<br>
+      <strong>Account Name:</strong> [Your Account Name]<br>
+      <strong>Account Number:</strong> [Your Account Number]<br>
+      <strong>Branch Code:</strong> [Your Branch Code]<br><br>
+      <strong>Reference:</strong> Your Name + Donation
+    </p>
+  </div>
+
+  <input type="submit" value="Submit Contribution">
+  <input type="reset" value="Clear Form">
+
+</form>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 MajdiAid. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
