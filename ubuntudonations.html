@@ -70,22 +70,30 @@ Your contribution helps build a united, empowered South Africa.
 Please complete the form below and make your contribution via EFT.
 </p>
 
-<form action="mailto:majdiwilliams@gmail.com" method="post" enctype="text/plain" class="donation-form">
+<form class="donation-form"
+      action="https://formspree.io/f/xkobngok"
+      method="POST">
+
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New Ubuntu Path Donation Intent">
 
   <label for="donorName">Full Name *</label>
-  <input type="text" id="donorName" name="Full Name" required>
+  <input type="text" id="donorName" name="donor_name" required>
 
   <label for="email">Email Address *</label>
-  <input type="email" id="email" name="Email" required>
+  <input type="email" id="email" name="email" required>
 
   <label for="amount">Contribution Amount (ZAR) *</label>
-  <input type="number" id="amount" name="Amount (ZAR)" required>
+  <input type="number" id="amount" name="amount_zar" required>
 
   <label for="reference">Preferred Payment Reference</label>
-  <input type="text" id="reference" name="Payment Reference" placeholder="Your Name + Donation">
+  <input type="text" id="reference" name="payment_reference" placeholder="Your Name + Donation">
 
   <label for="message">Message (Optional)</label>
-  <textarea id="message" name="Message" rows="4"></textarea>
+  <textarea id="message" name="message" rows="4"></textarea>
 
   <div class="eft-box">
     <h3>EFT Banking Details</h3>
@@ -98,8 +106,8 @@ Please complete the form below and make your contribution via EFT.
     </p>
   </div>
 
-  <input type="submit" value="Submit Contribution">
-  <input type="reset" value="Clear Form">
+  <button type="submit">Submit Contribution</button>
+  <button type="reset">Clear Form</button>
 
 </form>
 
