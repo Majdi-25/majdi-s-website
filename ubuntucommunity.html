@@ -40,31 +40,38 @@
   <h2>Become a Member</h2>
   <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
-  <form class="donation-form" action="#" method="post">
+  <form class="membership-form" action="#" method="post">
 
-    <label for="donorName">Full Name</label>
-    <input type="text" id="donorName" name="donorName">
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="fullName" required>
 
-    <label for="donorEmail">Email Address</label>
-    <input type="email" id="donorEmail" name="donorEmail">
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
 
-    <label for="amount">Donation Amount (ZAR) *</label>
-    <input type="number" id="amount" name="amount" min="1" required>
+    <label for="phone">Mobile Number</label>
+    <input type="tel" id="phone" name="phone">
 
-    <label for="donorMessage">Message (optional)</label>
-    <textarea id="donorMessage" name="donorMessage" rows="4"></textarea>
+    <label for="province">Province</label>
+    <select id="province" name="province">
+      <option value="">Select province</option>
+      <option>Western Cape</option>
+      <option>Eastern Cape</option>
+      <option>Gauteng</option>
+      <option>KwaZulu-Natal</option>
+      <option>Limpopo</option>
+      <option>Mpumalanga</option>
+      <option>North West</option>
+      <option>Northern Cape</option>
+      <option>Free State</option>
+    </select>
 
-    <div class="eft-box">
-      <h3>EFT Details</h3>
-      <p>
-        Bank: <strong>[Your Bank]</strong><br>
-        Account Name: <strong>UbuntuPath</strong><br>
-        Account Number: <strong>XXXXXXX</strong><br>
-        Reference: <strong>Your Name</strong>
-      </p>
-    </div>
+    <label for="donation">Optional Initial Donation (ZAR)</label>
+    <input type="number" id="donation" name="donation" min="0" placeholder="e.g. 50">
 
-    <input type="submit" value="Donate">
+    <label for="message">Why do you want to join UbuntuPath? (optional)</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Join UbuntuPath">
     <input type="reset" value="Clear">
 
   </form>
