@@ -40,33 +40,34 @@
   <h2>Become a Member</h2>
   <p>Join Ubuntu Path and be part of a movement for unity, empowerment and change in South Africa. Fill the form below to sign up.</p>
 
-<form action="mailto:majdiwilliams@gmail.com" method="post" enctype="text/plain" class="membership-form">
-  <label for="fullName">Full Name *</label><br>
-  <input type="text" id="fullName" name="fullName" required><br><br>
+  <form class="donation-form" action="#" method="post">
 
-  <label for="email">Email Address *</label><br>
-  <input type="email" id="email" name="email" required><br><br>
+    <label for="donorName">Full Name</label>
+    <input type="text" id="donorName" name="donorName">
 
-  <label for="phone">Phone Number</label><br>
-  <input type="tel" id="phone" name="phone"><br><br>
+    <label for="donorEmail">Email Address</label>
+    <input type="email" id="donorEmail" name="donorEmail">
 
-  <label for="address">Physical Address</label><br>
-  <textarea id="address" name="address" rows="3"></textarea><br><br>
+    <label for="amount">Donation Amount (ZAR) *</label>
+    <input type="number" id="amount" name="amount" min="1" required>
 
-  <label for="membershipType">Membership Type *</label><br>
-  <select id="membershipType" name="membershipType" required>
-    <option value="">Select Type</option>
-    <option value="Standard">Standard</option>
-    <option value="Premium">Premium</option>
-    <option value="Lifetime">Lifetime</option>
-  </select><br><br>
+    <label for="donorMessage">Message (optional)</label>
+    <textarea id="donorMessage" name="donorMessage" rows="4"></textarea>
 
-  <label for="reason">Why do you want to join?</label><br>
-  <textarea id="reason" name="reason" rows="4"></textarea><br><br>
+    <div class="eft-box">
+      <h3>EFT Details</h3>
+      <p>
+        Bank: <strong>[Your Bank]</strong><br>
+        Account Name: <strong>UbuntuPath</strong><br>
+        Account Number: <strong>XXXXXXX</strong><br>
+        Reference: <strong>Your Name</strong>
+      </p>
+    </div>
 
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
-</form>
+    <input type="submit" value="Donate">
+    <input type="reset" value="Clear">
+
+  </form>
 
 </section>
 
