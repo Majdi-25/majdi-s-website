@@ -474,6 +474,33 @@ footer {
   text-align: left;
 }
 
+/* Single checkbox alignment */
+.checkbox-single {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 12px;
+  margin: 25px 0;
+}
+
+/* Label uses grid */
+.checkbox-single label {
+  display: contents;
+  font-size: 0.95rem;
+}
+
+/* Checkbox positioning */
+.checkbox-single input[type="checkbox"] {
+  justify-self: end;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Text styling */
+.checkbox-single span {
+  line-height: 1.5;
+}
+
 
 /* ============================================================
    MAJDIAID THEME
