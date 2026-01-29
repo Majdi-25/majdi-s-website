@@ -187,13 +187,36 @@ If you believe in unity, service, and change — we welcome you.
   </select>
 
   <label>How would you like to help? (Select all that apply) *</label>
-  <div style="margin-bottom:15px;">
-    <label><input type="checkbox" name="roles[]" value="Recruit members"> Recruit members</label><br>
-    <label><input type="checkbox" name="roles[]" value="Collect signatures"> Collect signatures</label><br>
-    <label><input type="checkbox" name="roles[]" value="Fundraising & donations"> Fundraising & donations</label><br>
-    <label><input type="checkbox" name="roles[]" value="Community outreach"> Community outreach</label><br>
-    <label><input type="checkbox" name="roles[]" value="Event support"> Event support</label>
+
+  <div class="checkbox-group">
+
+    <label class="checkbox-item">
+      <input type="checkbox" name="roles[]" value="Recruit members">
+      <span>Recruit members</span>
+    </label>
+
+    <label class="checkbox-item">
+      <input type="checkbox" name="roles[]" value="Collect signatures">
+      <span>Collect signatures</span>
+    </label>
+
+    <label class="checkbox-item">
+      <input type="checkbox" name="roles[]" value="Fundraising & donations">
+      <span>Fundraising & donations</span>
+    </label>
+
+    <label class="checkbox-item">
+      <input type="checkbox" name="roles[]" value="Community outreach">
+      <span>Community outreach</span>
+    </label>
+
+    <label class="checkbox-item">
+      <input type="checkbox" name="roles[]" value="Event support">
+      <span>Event support</span>
+    </label>
+
   </div>
+
 
   <label for="experience">Previous volunteer or community experience (optional)</label>
   <textarea id="experience" name="experience" rows="4"></textarea>

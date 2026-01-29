@@ -325,23 +325,6 @@ footer {
   cursor: pointer;
 }
 
-.checkbox-group {
-  margin-bottom: 20px;
-}
-
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-.checkbox-item input[type="checkbox"] {
-  margin: 0;
-  transform: scale(1.1);
-}
-
 
 /* ============================================================
    UBUNTU Membership Form
@@ -463,6 +446,28 @@ footer {
   border-left: 4px solid #f0c000;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+
+/* ============================================================
+   Checkbox Alignment Fix (Volunteer Roles)
+   ============================================================ */
+
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin: 0;
+  transform: scale(1.1);
 }
 
 
