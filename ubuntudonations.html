@@ -129,8 +129,96 @@ Please complete the form below and make your contribution via EFT.
     </p>
   </div>
 
-  <button type="submit">Submit Contribution</button>
-  <button type="reset">Clear Form</button>
+  <button type="submit">Submit</button>
+  <button type="reset">Clear</button>
+
+</form>
+
+<h2>Become a Volunteer</h2>
+<p>
+UbuntuPath volunteers help grow the movement by engaging communities,
+collecting signatures, recruiting members, and assisting with fundraising.
+If you believe in unity, service, and change — we welcome you.
+</p>
+
+<form class="membership-form"
+      action="https://formspree.io/f/xbldgqbo"
+      method="POST">
+
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New UbuntuPath Volunteer Application">
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="_next" value="Ubuntuthankyou.html">
+
+  <label for="fullName">Full Name *</label>
+  <input type="text" id="fullName" name="full_name" required>
+
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Mobile Number *</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="province">Province *</label>
+  <select id="province" name="province" required>
+    <option value="">Select province</option>
+    <option>Western Cape</option>
+    <option>Eastern Cape</option>
+    <option>Gauteng</option>
+    <option>KwaZulu-Natal</option>
+    <option>Limpopo</option>
+    <option>Mpumalanga</option>
+    <option>North West</option>
+    <option>Northern Cape</option>
+    <option>Free State</option>
+  </select>
+
+  <label for="availability">Availability *</label>
+  <select id="availability" name="availability" required>
+    <option value="">Select availability</option>
+    <option>Weekdays</option>
+    <option>Weekends</option>
+    <option>Evenings</option>
+    <option>Flexible</option>
+  </select>
+
+  <label>How would you like to help? (Select all that apply) *</label>
+  <div style="margin-bottom:15px;">
+    <label><input type="checkbox" name="roles[]" value="Recruit members"> Recruit members</label><br>
+    <label><input type="checkbox" name="roles[]" value="Collect signatures"> Collect signatures</label><br>
+    <label><input type="checkbox" name="roles[]" value="Fundraising & donations"> Fundraising & donations</label><br>
+    <label><input type="checkbox" name="roles[]" value="Community outreach"> Community outreach</label><br>
+    <label><input type="checkbox" name="roles[]" value="Event support"> Event support</label>
+  </div>
+
+  <label for="experience">Previous volunteer or community experience (optional)</label>
+  <textarea id="experience" name="experience" rows="4"></textarea>
+
+  <!-- Volunteer Disclaimer -->
+  <div class="donation-disclaimer">
+    <p>
+      <strong>Volunteer Declaration:</strong><br>
+      Volunteers act in a voluntary, unpaid capacity and may not represent
+      themselves as official spokespeople or handle funds unless expressly authorised.
+    </p>
+
+    <p>
+      Any donations collected must be transferred directly to official UbuntuPath
+      accounts. Volunteers may not retain cash or promise benefits of any kind.
+    </p>
+
+    <p>
+      By submitting this form, you confirm that the information provided is accurate
+      and that you agree to act ethically, lawfully, and in the best interests of UbuntuPath.
+    </p>
+  </div>
+
+  <button type="submit">Apply</button>
+  <button type="reset">Clear</button>
 
 </form>
 
