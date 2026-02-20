@@ -80,6 +80,18 @@ Join UbuntuPath and be part of a movement for unity, empowerment, and change in 
   <label for="phone">Mobile Number</label>
   <input type="tel" id="phone" name="phone">
 
+  <!-- NEW: South African ID Number -->
+  <label for="idNumber">South African ID Number *</label>
+  <input type="text" id="idNumber" name="id_number" maxlength="13" pattern="[0-9]{13}" placeholder="13-digit ID number" required>
+
+  <!-- NEW: Registered Voter Question -->
+  <label>Are you a registered voter in South Africa? *</label>
+  <select id="registeredVoter" name="registered_voter" required>
+    <option value="">Select option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
   <label for="province">Province</label>
   <select id="province" name="province">
     <option value="">Select province</option>
