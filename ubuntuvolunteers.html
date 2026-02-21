@@ -127,34 +127,46 @@ If you believe in unity, service, and change — we welcome you.
     <option>Flexible</option>
   </select>
 
-  <label>How would you like to help? (Select all that apply) *</label>
+<label>How would you like to help? (Select at least one) *</label>
 
-  <div class="checkbox-group">
-    <label>
-      <input type="checkbox" name="help[]" value="recruit">
-      <span>Recruit members</span>
-    </label>
+<div class="checkbox-group">
 
-    <label>
-      <input type="checkbox" name="help[]" value="signatures">
-      <span>Collect signatures</span>
-    </label>
+  <label>
+    <input type="checkbox" name="help[]" value="recruit" required>
+    Recruit members
+  </label>
 
-    <label>
-      <input type="checkbox" name="help[]" value="fundraising">
-      <span>Fundraising & donations</span>
-    </label>
+  <label>
+    <input type="checkbox" name="help[]" value="signatures">
+    Collect signatures
+  </label>
 
-    <label>
-      <input type="checkbox" name="help[]" value="outreach">
-      <span>Community outreach</span>
-    </label>
+  <label>
+    <input type="checkbox" name="help[]" value="fundraising">
+    Fundraising & donations
+  </label>
 
-    <label>
-      <input type="checkbox" name="help[]" value="events">
-      <span>Event support</span>
-    </label>
-  </div>
+  <label>
+    <input type="checkbox" name="help[]" value="outreach">
+    Community outreach
+  </label>
+
+  <label>
+    <input type="checkbox" name="help[]" value="events">
+    Event support
+  </label>
+
+  <label>
+    <input type="checkbox" name="help[]" value="iec_registration">
+    Assist with IEC registration drive
+  </label>
+
+  <label>
+    <input type="checkbox" name="help[]" value="other">
+    Other
+  </label>
+
+</div>
 
   <label for="experience">Previous volunteer or community experience (optional)</label>
   <textarea id="experience" name="experience" rows="4"></textarea>
@@ -185,6 +197,13 @@ If you believe in unity, service, and change — we welcome you.
         I have read and agree to the
         <a href="ubuntudocuments.html" target="_blank">UbuntuPath Volunteer Code of Conduct</a>
       </span>
+    </label>
+  </div>
+
+  <div class="privacy-consent">
+    <label>
+      <input type="checkbox" name="privacy_consent" required>
+      I consent to UbuntuPath storing and processing my information in accordance with South African POPIA regulations.
     </label>
   </div>
 
