@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UbuntuPath | Volunteers</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="ubuntu-page">
+
+<header class="logo-motto">
+  <div class="header-top">
+    <img src="images/UbunutuPath-logo2.jpeg" alt="UbuntuPath" class="logo side-logo">
+  </div>
+  <h1 class="motto">For All South Africans!</h1>
+</header>
+
+<nav>
+  <ul class="nav-menu">
+
+    <li><a href="index.html">About</a></li>
+
+    <!-- UBUNTU DROPDOWN -->
+    <li class="dropdown">
+      <a href="ubuntupath.html" class="dropbtn">UbuntuPath ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="ubuntucommunity.html">Join the Movement/Membership</a></li>
+        <li><a href="ubuntudonations.html">Contributions</a></li>
+        <li><a href="ubuntuvolunteers.html">Volunteers</a></li>
+      </ul>
+    </li>
+
+    <!-- MAJDIAID DROPDOWN -->
+    <li class="dropdown">
+      <a href="majdiaid.html" class="dropbtn">MajdiAid ▾</a>
+      <ul class="dropdown-content majdiaid-dropdown">
+        <li><a href="majdiaidgallery.html">Gallery</a></li>
+        <li><a href="majdiaidevents.html">Events</a></li>
+        <li><a href="majdiaidshop.html">Shop</a></li>
+        <li><a href="majdiaiddocuments.html">Documents</a></li>
+        <li><a href="majdiaidcommunity.html">Join the Movement</a></li>
+        <li><a href="majdiaiddonations.html">Contributions</a></li>
+        <li><a href="majdiaidvolunteers.html">Volunteers</a></li>
+        <li><a href="majdiaidmemberships.html">Membership</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+</nav>
+
+<section class="section">
+
+<h2>Become a Volunteer</h2>
+<p>
+UbuntuPath volunteers help grow the movement by engaging communities,
+collecting signatures, recruiting members, and assisting with fundraising.
+If you believe in unity, service, and change — we welcome you.
+</p>
+
+<form class="membership-form"
+      action="https://formspree.io/f/xvzrkqlw"
+      method="POST">
+
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="UbuntuPath Volunteer Application">
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="_next" value="Ubuntuthankyou.html">
+
+  <label for="fullName">Full Name *</label>
+  <input type="text" id="fullName" name="full_name" required>
+
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Mobile Number *</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <!-- NEW: ID Number -->
+  <label for="idNumber">South African ID Number *</label>
+  <input type="text" id="idNumber" name="id_number" 
+         pattern="[0-9]{13}" 
+         maxlength="13"
+         placeholder="13-digit ID number"
+         required>
+
+  <!-- NEW: Registered Voter -->
+  <label>Are you a registered voter? *</label>
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="registered_voter" value="Yes" required>
+      Yes
+    </label>
+    <label>
+      <input type="radio" name="registered_voter" value="No" required>
+      No
+    </label>
+  </div>
+
+  <label for="province">Province *</label>
+  <select id="province" name="province" required>
+    <option value="">Select province</option>
+    <option>Western Cape</option>
+    <option>Eastern Cape</option>
+    <option>Gauteng</option>
+    <option>KwaZulu-Natal</option>
+    <option>Limpopo</option>
+    <option>Mpumalanga</option>
+    <option>North West</option>
+    <option>Northern Cape</option>
+    <option>Free State</option>
+  </select>
+
+  <label for="availability">Availability *</label>
+  <select id="availability" name="availability" required>
+    <option value="">Select availability</option>
+    <option>Weekdays</option>
+    <option>Weekends</option>
+    <option>Evenings</option>
+    <option>Flexible</option>
+  </select>
+
+  <label>How would you like to help? (Select all that apply) *</label>
+
+  <div class="checkbox-group">
+    <label>
+      <input type="checkbox" name="help[]" value="recruit">
+      <span>Recruit members</span>
+    </label>
+
+    <label>
+      <input type="checkbox" name="help[]" value="signatures">
+      <span>Collect signatures</span>
+    </label>
+
+    <label>
+      <input type="checkbox" name="help[]" value="fundraising">
+      <span>Fundraising & donations</span>
+    </label>
+
+    <label>
+      <input type="checkbox" name="help[]" value="outreach">
+      <span>Community outreach</span>
+    </label>
+
+    <label>
+      <input type="checkbox" name="help[]" value="events">
+      <span>Event support</span>
+    </label>
+  </div>
+
+  <label for="experience">Previous volunteer or community experience (optional)</label>
+  <textarea id="experience" name="experience" rows="4"></textarea>
+
+  <!-- Volunteer Disclaimer -->
+  <div class="donation-disclaimer">
+    <p>
+      <strong>Volunteer Declaration:</strong><br>
+      Volunteers act in a voluntary, unpaid capacity and may not represent
+      themselves as official spokespeople or handle funds unless expressly authorised.
+    </p>
+
+    <p>
+      Any donations collected must be transferred directly to official UbuntuPath
+      accounts. Volunteers may not retain cash or promise benefits of any kind.
+    </p>
+
+    <p>
+      By submitting this form, you confirm that the information provided is accurate
+      and that you agree to act ethically, lawfully, and in the best interests of UbuntuPath.
+    </p>
+  </div>
+
+  <div class="checkbox-single">
+    <label>
+      <input type="checkbox" name="code_of_conduct" required>
+      <span>
+        I have read and agree to the
+        <a href="ubuntudocuments.html" target="_blank">UbuntuPath Volunteer Code of Conduct</a>
+      </span>
+    </label>
+  </div>
+
+  <button type="submit">Apply</button>
+  <button type="reset">Clear</button>
+
+</form>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 UbuntuPath. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
