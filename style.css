@@ -660,3 +660,18 @@ footer {
   width: auto !important;
   margin: 0;
 }
+
+/* Prevent radios from stretching full width */
+.membership-form input[type="radio"] {
+  width: auto !important;
+  margin: 0;
+}
+
+/* Align radio options */
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}

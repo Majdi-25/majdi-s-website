@@ -92,18 +92,17 @@ If you believe in unity, service, and change — we welcome you.
          placeholder="13-digit ID number"
          required>
 
-  <!-- NEW: Registered Voter -->
-  <label>Are you a registered voter? *</label>
-  <div class="radio-group">
-    <label>
-      <input type="radio" name="registered_voter" value="Yes" required>
-      Yes
-    </label>
-    <label>
-      <input type="radio" name="registered_voter" value="No" required>
-      No
-    </label>
-  </div>
+  <p>Are you a registered voter? *</p>
+
+  <label class="radio-option">
+    <input type="radio" name="registered_voter" value="Yes" required>
+    Yes
+  </label>
+
+  <label class="radio-option">
+    <input type="radio" name="registered_voter" value="No">
+    No
+  </label>
 
   <label for="province">Province *</label>
   <select id="province" name="province" required>
