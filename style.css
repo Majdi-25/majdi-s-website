@@ -582,83 +582,69 @@ footer {
 }
 
 
-/* ============================================================
-   MAJDI THEME
-   ============================================================ */
+/* ==============================
+   GOVERNMENT DOCUMENT ARCHIVE
+   ============================== */
 
-.majdi-page {
-  background-color: #0F2A3D;
-  color: #F8F4EC;
+.documents-section {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.majdi-page .logo-motto {
-  background-color: #0F2A3D;
+.archive-intro {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  opacity: 0.85;
 }
 
-.majdi-page .motto {
-  color: #D4A73C;
-}
-
-.majdi-page nav {
-  background-color: #D4A73C;
-}
-
-.majdi-page .nav-menu a {
-  color: #0F2A3D;
+.doc-category {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.3rem;
   font-weight: bold;
+  color: #103349;
 }
 
-.majdi-page .nav-menu a:hover {
-  background-color: #0F2A3D;
-  color: #D4A73C;
-}
-
-.majdi-page footer {
-  background-color: #D4A73C;
-  color: #0F2A3D;
-}
-
-
-/* ============================================================
-   MAJDI DROPDOWN (Gold Background)
-   ============================================================ */
-
-.majdi-page .dropdown-content {
-  background-color: #D4A73C !important;  /* gold */
-  min-width: 200px;
-  border-radius: 4px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 9999;
-  border: 1px solid rgba(0,0,0,0.15);
-}
-
-/* dropdown links */
-.majdi-page .dropdown-content li a {
-  color: #0F2A3D !important;             /* navy text */
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
+.accordion-btn {
+  width: 100%;
+  background: #f5f5f5;
+  color: #222;
+  border: 1px solid #ddd;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 1rem;
   font-weight: 600;
-  border-bottom: 1px solid rgba(0,0,0,0.10);
-}
-
-/* remove last border */
-.majdi-page .dropdown-content li:last-child a {
-  border-bottom: none;
-}
-
-/* hover */
-.majdi-page .dropdown-content li a:hover {
-  background-color: #0F2A3D !important;  /* navy */
-  color: #D4A73C !important;             /* gold */
-}
-
-/* dropdown cursor */
-.majdi-page .dropbtn {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background: #eaeaea;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #ffffff;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+}
+
+.accordion-content iframe {
+  margin: 20px 0;
+  border-radius: 4px;
+  background: white;
+}
+
+.accordion-btn.active .icon {
+  transform: rotate(180deg);
+  transition: 0.3s ease;
 }
