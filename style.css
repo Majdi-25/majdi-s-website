@@ -501,6 +501,19 @@ footer {
   line-height: 1.5;
 }
 
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.radio-option input {
+  width: 16px;
+  height: 16px;
+}
+
 
 /* ============================================================
    MAJDIAID THEME
@@ -640,4 +653,10 @@ footer {
 .accordion-btn.active .icon {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
+}
+
+/* Force radio buttons to not stretch */
+.ubuntu-page .donation-form input[type="radio"] {
+  width: auto !important;
+  margin: 0;
 }
