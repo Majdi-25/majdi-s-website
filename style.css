@@ -607,14 +607,14 @@ footer {
   color: #103349;
 }
 
+/* ACCORDION BUTTON */
 .accordion-btn {
   width: 100%;
   background: #f5f5f5;
-  color: #222;
   border: 1px solid #ddd;
   padding: 18px 20px;
   text-align: left;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -624,27 +624,20 @@ footer {
 }
 
 .accordion-btn:hover {
-  background: #eaeaea;
+  background: #e9e9e9;
 }
 
+/* CONTENT */
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  background: #ffffff;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 0 20px;
+  display: none;        /* KEY CHANGE */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 20px;
 }
 
-.accordion-content iframe {
-  margin: 20px 0;
-  border-radius: 4px;
-  background: white;
-}
-
+/* Rotate arrow */
 .accordion-btn.active .icon {
   transform: rotate(180deg);
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }

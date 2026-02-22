@@ -8,40 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<script>
-  const accordionBtns = document.querySelectorAll(".accordion-btn");
-
-  accordionBtns.forEach(btn => {
-    btn.addEventListener("click", function () {
-
-      // Close all other sections
-      accordionBtns.forEach(otherBtn => {
-        if (otherBtn !== this) {
-          otherBtn.classList.remove("active");
-          otherBtn.nextElementSibling.style.maxHeight = null;
-        }
-      });
-
-      // Toggle current
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-
-        const iframe = content.querySelector("iframe");
-        if (iframe) {
-          iframe.onload = function () {
-            content.style.maxHeight = content.scrollHeight + "px";
-          };
-        }
-      }
-    });
-  });
-</script>
-
 <body class="ubuntu-page">
 
 <header class="logo-motto">
@@ -158,6 +124,38 @@
 <footer>
   <p>&copy; 2025 UbuntuPath. All Rights Reserved.</p>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const accordionBtns = document.querySelectorAll(".accordion-btn");
+
+  accordionBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      const content = this.nextElementSibling;
+      const isOpen = content.style.display === "block";
+
+      // Close all
+      document.querySelectorAll(".accordion-content").forEach(section => {
+        section.style.display = "none";
+      });
+
+      document.querySelectorAll(".accordion-btn").forEach(button => {
+        button.classList.remove("active");
+      });
+
+      // Open if it was closed
+      if (!isOpen) {
+        content.style.display = "block";
+        this.classList.add("active");
+      }
+
+    });
+  });
+
+});
+</script>
 
 </body>
 </html>
