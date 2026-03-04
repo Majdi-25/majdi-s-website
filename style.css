@@ -266,6 +266,31 @@ footer {
   font-style: italic;
 }
 
+/* =====================================
+   ABOUT IMAGE WITH CAPTION (FIXED)
+   ===================================== */
+
+.about-figure {
+  float: right;
+  width: 220px;
+  margin: 0 0 20px 30px;
+}
+
+.about-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.about-figure figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #F1EDE1;
+  font-style: italic;
+}
+
 
 /* ============================================================
    UBUNTU THEME (FIXED — YOUR COLOURS EXACT)
