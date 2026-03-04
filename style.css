@@ -242,6 +242,30 @@ footer {
   color: white;
 }
 
+/* =====================================
+   ABOUT IMAGE WITH CAPTION
+   ===================================== */
+
+.about-figure {
+  float: right;
+  width: 220px;
+  margin: 0 0 20px 30px;
+  text-align: center;
+}
+
+.about-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.about-figure figcaption {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #F1EDE1; /* cream to match theme */
+  font-style: italic;
+}
+
 
 /* ============================================================
    UBUNTU THEME (FIXED — YOUR COLOURS EXACT)
