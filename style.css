@@ -173,6 +173,24 @@ nav {
   margin-top: 30px;
 }
 
+/* =====================================
+   ABOUT PAGE IMAGE (FLOAT RIGHT)
+   ===================================== */
+
+.about-image {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 0 0 20px 30px;  /* space between image & text */
+  border-radius: 6px;
+}
+
+.section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 
 /* ============================================================
    GALLERY
