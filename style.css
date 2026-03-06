@@ -747,12 +747,12 @@ footer {
 /* ===============================
    Join The Movement Form Styling
    =============================== */
-   
+
 .join-movement {
     max-width: 750px;
     margin: 60px auto;
     padding: 40px;
-    background: #ffffff;
+    background: #1f2858;
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     font-family: Arial, Helvetica, sans-serif;
