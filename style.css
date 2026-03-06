@@ -742,3 +742,123 @@ footer {
   margin-bottom: 8px;
   cursor: pointer;
 }
+
+
+/* ===============================
+   Join The Movement Form Styling
+   =============================== */
+
+/* Form Section */
+.join-movement {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Title */
+.join-movement h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #222;
+}
+
+/* Intro Text */
+.join-movement p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Section Titles */
+.join-movement h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+/* Labels */
+.join-movement label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs */
+.join-movement input[type="text"],
+.join-movement input[type="email"],
+.join-movement input[type="tel"],
+.join-movement input[type="date"],
+.join-movement input[type="number"],
+.join-movement textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.2s ease;
+}
+
+/* Focus effect */
+.join-movement input:focus,
+.join-movement textarea:focus {
+    border-color: #c9a227;
+    outline: none;
+}
+
+/* Textarea */
+.join-movement textarea {
+    resize: vertical;
+}
+
+/* Checkboxes */
+.join-movement input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Checkbox group spacing */
+.join-movement label input[type="checkbox"] {
+    display: inline-block;
+}
+
+/* Submit Button */
+.join-movement button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background: #c9a227;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover */
+.join-movement button:hover {
+    background: #a8861d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .join-movement {
+        padding: 25px;
+        margin: 30px 15px;
+    }
+
+    .join-movement h2 {
+        font-size: 26px;
+    }
+
+}
+
