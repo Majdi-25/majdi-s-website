@@ -46,9 +46,83 @@
   </ul>
 </nav>
 
-  <section class="section">
-    <h2>Membership</h2>
-    <p>Details coming soon.</p>
+  <section class="join-movement">
+    <h2>Join The Movement – MajdiAid</h2>
+    <p>Become part of the movement. Complete the form below to get involved.</p>
+
+    <form action="/submit-join-form" method="POST">
+
+      <h3>1. Personal Information</h3>
+      <label>Full Name *</label>
+      <input type="text" name="full_name" required>
+
+      <label>ID / Passport Number *</label>
+      <input type="text" name="id_number" required>
+
+      <label>Date of Birth *</label>
+      <input type="date" name="dob" required>
+
+      <label>Gender</label>
+      <input type="text" name="gender">
+
+      <label>Nationality</label>
+      <input type="text" name="nationality">
+
+      <label>Residential Address *</label>
+      <input type="text" name="address" required>
+
+      <label>City/Town *</label>
+      <input type="text" name="city" required>
+
+      <label>Province *</label>
+      <input type="text" name="province" required>
+
+      <label>Postal Code</label>
+      <input type="text" name="postal_code">
+
+      <label>Email Address *</label>
+      <input type="email" name="email" required>
+
+      <label>Mobile Number *</label>
+      <input type="tel" name="mobile" required>
+
+
+      <h3>2. Areas of Interest</h3>
+      <label><input type="checkbox" name="interest[]" value="Community Outreach"> Community Outreach</label>
+      <label><input type="checkbox" name="interest[]" value="Youth Development"> Youth Development</label>
+      <label><input type="checkbox" name="interest[]" value="Fundraising & Events"> Fundraising & Events</label>
+      <label><input type="checkbox" name="interest[]" value="Administration"> Administration</label>
+      <label><input type="checkbox" name="interest[]" value="Media & Communications"> Media & Communications</label>
+      <label><input type="checkbox" name="interest[]" value="Volunteer Coordination"> Volunteer Coordination</label>
+      <label>Other:</label>
+      <input type="text" name="interest_other">
+
+
+      <h3>3. Skills & Experience</h3>
+      <label>Please describe your skills or experience:</label>
+      <textarea name="skills" rows="4"></textarea>
+
+      <h3>4. Availability</h3>
+      <label><input type="checkbox" name="availability[]" value="Weekdays"> Weekdays</label>
+      <label><input type="checkbox" name="availability[]" value="Weekends"> Weekends</label>
+      <label><input type="checkbox" name="availability[]" value="Evenings"> Evenings</label>
+      <label><input type="checkbox" name="availability[]" value="Flexible"> Flexible</label>
+
+
+      <label>Hours per month available:</label>
+      <input type="number" name="hours_per_month">
+
+
+      <h3>5. Declaration</h3>
+      <label>
+        <input type="checkbox" name="declaration" required>
+        I confirm that the information provided is true and I support the mission and values of MajdiAid.
+      </label>
+
+      <br><br>
+      <button type="submit">Submit Application</button>
+
+    </form>
   </section>
 
   <footer>
