@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MajdiAid | Documents</title>
+  <title>MajdiAid | Animal Care</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -50,8 +50,52 @@
 
   </ul>
 </nav>
-  
-<section class="section">
+
+<section class="join-movement">
+
+<h2>Animal Care – MajdiAid</h2>
+<p>Report an animal needing assistance or request support.</p>
+
+<form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+
+<h3>1. Reporter Information</h3>
+
+<label>Full Name *</label>
+<input type="text" name="name" required>
+
+<label>Contact Number *</label>
+<input type="tel" name="phone" required>
+
+<label>Email</label>
+<input type="email" name="email">
+
+<label>Location of Animal *</label>
+<input type="text" name="location" required>
+
+
+<h3>2. Animal Information</h3>
+
+<label>Animal Type</label>
+<input type="text" name="animal_type">
+
+<div class="checkbox-group">
+
+<label><input type="checkbox" name="issue[]" value="Injured"> Injured</label>
+
+<label><input type="checkbox" name="issue[]" value="Abandoned"> Abandoned</label>
+
+<label><input type="checkbox" name="issue[]" value="Neglected"> Neglected</label>
+
+<label><input type="checkbox" name="issue[]" value="Stray"> Stray</label>
+
+</div>
+
+<label>Description of situation</label>
+<textarea name="description" rows="4"></textarea>
+
+<button type="submit">Submit Report</button>
+
+</form>
 
 </section>
 

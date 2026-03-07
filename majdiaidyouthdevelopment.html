@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MajdiAid | Documents</title>
+  <title>MajdiAid | Youth Development</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -50,8 +50,54 @@
 
   </ul>
 </nav>
-  
-<section class="section">
+
+<section class="join-movement">
+
+<h2>Youth Development – MajdiAid</h2>
+<p>Register a young person for development programs.</p>
+
+<form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+
+<h3>1. Youth Information</h3>
+
+<label>Full Name *</label>
+<input type="text" name="name" required>
+
+<label>Age *</label>
+<input type="number" name="age" required>
+
+<label>School / Institution</label>
+<input type="text" name="school">
+
+<label>Guardian Name *</label>
+<input type="text" name="guardian" required>
+
+<label>Guardian Contact *</label>
+<input type="tel" name="guardian_phone" required>
+
+
+<h3>2. Program Interest</h3>
+
+<div class="checkbox-group">
+
+<label><input type="checkbox" name="program[]" value="Leadership"> Leadership Training</label>
+
+<label><input type="checkbox" name="program[]" value="Entrepreneurship"> Entrepreneurship</label>
+
+<label><input type="checkbox" name="program[]" value="Education support"> Education Support</label>
+
+<label><input type="checkbox" name="program[]" value="Sports"> Sports & Recreation</label>
+
+<label><input type="checkbox" name="program[]" value="Arts"> Arts & Culture</label>
+
+</div>
+
+<label>Additional Information</label>
+<textarea name="notes" rows="4"></textarea>
+
+<button type="submit">Submit Registration</button>
+
+</form>
 
 </section>
 
