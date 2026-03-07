@@ -15,7 +15,7 @@ html, body {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #66a1a0; /* default teal */
+  background-color: #66a1a0;
   color: #fff;
 }
 
@@ -25,7 +25,7 @@ body {
    ============================================================ */
 
 header.logo-motto {
-  background-color: #F1EDE1; /* cream */
+  background-color: #F1EDE1;
   text-align: center;
   padding: 40px 20px;
 }
@@ -53,16 +53,16 @@ header.logo-motto {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   margin: 5px 0 0 0;
-  color: #103349; /* navy default */
+  color: #103349;
 }
 
 
 /* ============================================================
-   NAVIGATION MENU
+   NAVIGATION
    ============================================================ */
 
 nav {
-  background-color: #103349; /* navy */
+  background-color: #103349;
 }
 
 .nav-menu {
@@ -88,14 +88,14 @@ nav {
 }
 
 
-/* -------------------------
+/* ============================================================
    DROPDOWN MENU
-   ------------------------- */
+   ============================================================ */
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #103349; /* navy */
+  background-color: #103349;
   top: 100%;
   left: 0;
   min-width: 200px;
@@ -119,11 +119,10 @@ nav {
 }
 
 .dropdown-menu a:hover {
-  background-color: #66a1a0; /* teal */
+  background-color: #66a1a0;
   color: #000;
 }
 
-/* Child links */
 .dropdown-menu li.sub-item a {
   padding-left: 30px;
   font-size: 0.95rem;
@@ -173,22 +172,36 @@ nav {
   margin-top: 30px;
 }
 
-/* =====================================
-   ABOUT PAGE IMAGE (FLOAT RIGHT)
-   ===================================== */
-
-.about-image {
-  float: right;
-  width: 220px;
-  height: auto;
-  margin: 0 0 20px 30px;  /* space between image & text */
-  border-radius: 6px;
-}
-
 .section::after {
   content: "";
   display: block;
   clear: both;
+}
+
+
+/* ============================================================
+   ABOUT IMAGE WITH CAPTION
+   ============================================================ */
+
+.about-figure {
+  float: right;
+  width: 220px;
+  margin: 0 0 20px 30px;
+  text-align: center;
+}
+
+.about-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.about-figure figcaption {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #F1EDE1;
+  font-style: italic;
 }
 
 
@@ -242,279 +255,11 @@ footer {
   color: white;
 }
 
-/* =====================================
-   ABOUT IMAGE WITH CAPTION
-   ===================================== */
-
-.about-figure {
-  float: right;
-  width: 220px;
-  margin: 0 0 20px 30px;
-  text-align: center;
-}
-
-.about-figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.about-figure figcaption {
-  font-size: 0.85rem;
-  margin-top: 8px;
-  color: #F1EDE1; /* cream to match theme */
-  font-style: italic;
-}
-
-/* =====================================
-   ABOUT IMAGE WITH CAPTION (FIXED)
-   ===================================== */
-
-.about-figure {
-  float: right;
-  width: 220px;
-  margin: 0 0 20px 30px;
-}
-
-.about-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.about-figure figcaption {
-  text-align: center;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  color: #F1EDE1;
-  font-style: italic;
-}
-
 
 /* ============================================================
-   UBUNTU THEME (FIXED — YOUR COLOURS EXACT)
+   FORM UTILITIES
    ============================================================ */
 
-.ubuntu-page {
-  background-color: #66a1a0; /* teal */
-  color: white;
-}
-
-.ubuntu-page header.logo-motto {
-  background-color: #F1EDE1 !important; /* cream */
-}
-
-.ubuntu-page .motto {
-  color: #103349 !important; /* navy */
-}
-
-.ubuntu-page nav {
-  background-color: #103349;
-}
-
-.ubuntu-page .nav-menu a {
-  color: #F1EDE1; /* cream */
-}
-
-.ubuntu-page .nav-menu a:hover {
-  background-color: #66a1a0; /* teal */
-  color: #103349;            /* navy */
-}
-
-.ubuntu-page .section {
-  background-color: #66a1a0; /* teal */
-  color: white;
-}
-
-.ubuntu-page .section h2,
-.ubuntu-page .section h3 {
-  color: white;
-}
-
-.ubuntu-page footer {
-  background-color: #103349;
-  color: #F1EDE1;
-}
-
-/* ============================================================
-   UBUNTU DROPDOWN (NEW)
-   ============================================================ */
-
-.nav-menu .dropdown {
-  position: relative;
-}
-
-/* main dropdown container */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #103349; /* navy */
-  min-width: 200px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  top: 100%;
-  left: 0;
-  border-radius: 4px;
-  z-index: 999;
-}
-
-/* show on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* dropdown links */
-.dropdown-content li a {
-  display: block;
-  padding: 12px 16px;
-  color: #F1EDE1;          /* cream */
-  text-decoration: none;
-  font-weight: normal;
-  white-space: nowrap;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-}
-
-/* last item: remove divider */
-.dropdown-content li:last-child a {
-  border-bottom: none;
-}
-
-/* hover effect */
-.dropdown-content li a:hover {
-  background-color: #66a1a0; /* teal */
-  color: #103349;            /* navy */
-}
-
-/* dropdown toggle arrow */
-.dropbtn {
-  cursor: pointer;
-}
-
-/* ============================================================
-   UBUNTU Membership Form
-   ============================================================ */
-
-/* Ubuntu Membership Form Styling */
-.ubuntu-page .membership-form {
-  background-color: rgba(241, 237, 225, 0.1); /* slightly cream transparent */
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 20px auto;
-  color: #fff;
-}
-
-.ubuntu-page .membership-form input,
-.ubuntu-page .membership-form select,
-.ubuntu-page .membership-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.05);
-  color: #fff;
-}
-
-.ubuntu-page .membership-form input[type="submit"],
-.ubuntu-page .membership-form input[type="reset"] {
-  width: 48%;
-  background-color: #103349; /* navy */
-  color: #F1EDE1; /* cream */
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 12px 0;
-  margin-right: 4%;
-  transition: all 0.3s ease;
-}
-
-.ubuntu-page .membership-form input[type="submit"]:hover,
-.ubuntu-page .membership-form input[type="reset"]:hover {
-  background-color: #66a1a0; /* teal */
-  color: #103349; /* navy */
-}
-
-.ubuntu-page .membership-form textarea {
-  resize: vertical;
-}
-
-/* ============================================================
-   UBUNTU Donation Form
-   ============================================================ */
-
-.ubuntu-page .donation-form {
-  background-color: rgba(241, 237, 225, 0.1);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 30px auto;
-  color: #fff;
-}
-
-.ubuntu-page .donation-form input,
-.ubuntu-page .donation-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.05);
-  color: #fff;
-}
-
-.ubuntu-page .donation-form textarea {
-  resize: vertical;
-}
-
-.ubuntu-page .donation-form input[type="submit"],
-.ubuntu-page .donation-form input[type="reset"] {
-  width: 48%;
-  background-color: #103349;
-  color: #F1EDE1;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 12px 0;
-  margin-right: 4%;
-  transition: all 0.3s ease;
-}
-
-.ubuntu-page .donation-form input[type="submit"]:hover,
-.ubuntu-page .donation-form input[type="reset"]:hover {
-  background-color: #66a1a0;
-  color: #103349;
-}
-
-/* EFT Info Box */
-.ubuntu-page .eft-box {
-  background-color: rgba(16, 51, 73, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  margin: 25px 0;
-}
-
-.ubuntu-page .eft-box h3 {
-  margin-top: 0;
-  color: #F1EDE1;
-}
-
-.donation-disclaimer {
-  margin: 20px 0;
-  padding: 15px;
-  background: #569291;
-  border-left: 4px solid #f0c000;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-/* Checkbox group layout */
 .checkbox-group {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -523,25 +268,21 @@ footer {
   margin-top: 10px;
 }
 
-/* Make each label span both columns */
 .checkbox-group label {
   display: contents;
   font-size: 1rem;
 }
 
-/* Checkbox alignment */
 .checkbox-group input[type="checkbox"] {
   justify-self: end;
   transform: scale(1.1);
   cursor: pointer;
 }
 
-/* Text alignment */
 .checkbox-group label span {
   text-align: left;
 }
 
-/* Single checkbox alignment */
 .checkbox-single {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -550,20 +291,17 @@ footer {
   margin: 25px 0;
 }
 
-/* Label uses grid */
 .checkbox-single label {
   display: contents;
   font-size: 0.95rem;
 }
 
-/* Checkbox positioning */
 .checkbox-single input[type="checkbox"] {
   justify-self: end;
   transform: scale(1.1);
   cursor: pointer;
 }
 
-/* Text styling */
 .checkbox-single span {
   line-height: 1.5;
 }
@@ -583,6 +321,72 @@ footer {
 
 
 /* ============================================================
+   UBUNTU THEME
+   ============================================================ */
+
+.ubuntu-page {
+  background-color: #66a1a0;
+  color: white;
+}
+
+.ubuntu-page header.logo-motto {
+  background-color: #F1EDE1 !important;
+}
+
+.ubuntu-page .motto {
+  color: #103349 !important;
+}
+
+.ubuntu-page nav {
+  background-color: #103349;
+}
+
+.ubuntu-page .nav-menu a {
+  color: #F1EDE1;
+}
+
+.ubuntu-page .nav-menu a:hover {
+  background-color: #66a1a0;
+  color: #103349;
+}
+
+.ubuntu-page footer {
+  background-color: #103349;
+  color: #F1EDE1;
+}
+
+
+/* ============================================================
+   UBUNTU FORMS
+   ============================================================ */
+
+.ubuntu-page .membership-form,
+.ubuntu-page .donation-form {
+  background-color: rgba(241, 237, 225, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.ubuntu-page .membership-form input,
+.ubuntu-page .donation-form input,
+.ubuntu-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.membership-form input[type="radio"],
+.ubuntu-page .donation-form input[type="radio"] {
+  width: auto !important;
+  margin: 0;
+}
+
+
+/* ============================================================
    MAJDIAID THEME
    ============================================================ */
 
@@ -593,10 +397,6 @@ footer {
 
 .majdiaid-page .logo-motto {
   background-color: #121B46;
-}
-
-.majdiaid-page .motto {
-  color: #fff;
 }
 
 .majdiaid-page nav {
@@ -612,59 +412,55 @@ footer {
   color: #fff;
 }
 
-.majdiaid-page .dropdown-menu a {
-  color: #fff;
-}
-
 .majdiaid-page footer {
   background-color: #fff;
   color: #121B46;
 }
 
-/* ==========================
-   MAJDIAID DROPDOWN OVERRIDE
-   ========================== */
 
-.majdiaid-page .dropdown-content {
-  background-color: #fff !important;  /* white background */
-  border: 1px solid rgba(0,0,0,0.15);
-  min-width: 200px;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 9999;
-  list-style: none;
+/* ============================================================
+   JOIN THE MOVEMENT FORM
+   ============================================================ */
+
+.join-movement {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #1f2858;
+  border-radius: 10px;
 }
 
-.majdiaid-page .dropdown-content li a {
-  color: #121B46 !important;             /* blue text */
-  padding: 12px 16px;
-  display: block;
-  background-color: transparent;
-  font-weight: normal;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+.join-movement h2 {
+  text-align: center;
+  font-size: 32px;
 }
 
-.majdiaid-page .dropdown-content li:last-child a {
-  border-bottom: none;
+.join-movement h3 {
+  margin-top: 30px;
+  border-bottom: 2px solid #fff;
 }
 
-.majdiaid-page .dropdown-content li a:hover {
-  background-color: #121B46 !important;  /* blue */
-  color: #fff !important;             /* white */
+.join-movement input,
+.join-movement textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
 }
 
-.majdiaid-page .dropbtn {
-  cursor: pointer;
+.join-movement button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  background: #c9a227;
+  color: white;
+  border: none;
+  border-radius: 6px;
 }
 
 
-/* ==============================
-   GOVERNMENT DOCUMENT ARCHIVE
-   ============================== */
+/* ============================================================
+   DOCUMENT ARCHIVE
+   ============================================================ */
 
 .documents-section {
   max-width: 1100px;
@@ -679,15 +475,12 @@ footer {
 
 .doc-category {
   margin-top: 60px;
-  margin-bottom: 15px;
-  padding-bottom: 8px;
   border-bottom: 2px solid #ccc;
   font-size: 1.3rem;
   font-weight: bold;
   color: #103349;
 }
 
-/* ACCORDION BUTTON */
 .accordion-btn {
   width: 100%;
   background: #f5f5f5;
@@ -697,158 +490,11 @@ footer {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.3s ease;
 }
 
-.accordion-btn:hover {
-  background: #e9e9e9;
-}
-
-/* CONTENT */
 .accordion-content {
-  display: none;        /* KEY CHANGE */
+  display: none;
   background: #fff;
   border: 1px solid #ddd;
-  border-top: none;
   padding: 20px;
-}
-
-/* Rotate arrow */
-.accordion-btn.active .icon {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
-/* Force radio buttons to not stretch */
-.ubuntu-page .donation-form input[type="radio"] {
-  width: auto !important;
-  margin: 0;
-}
-
-/* Prevent radios from stretching full width */
-.membership-form input[type="radio"] {
-  width: auto !important;
-  margin: 0;
-}
-
-/* Align radio options */
-.radio-option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-
-/* ===============================
-   Join The Movement Form Styling
-   =============================== */
-
-.join-movement {
-    max-width: 750px;
-    margin: 60px auto;
-    padding: 40px;
-    background: #1f2858;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.join-movement h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 32px;
-    color: #ffffff;
-}
-
-.join-movement p {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.join-movement h3 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 5px;
-}
-
-/* Labels */
-
-.join-movement label {
-    display: block;
-    margin-top: 12px;
-    font-weight: 600;
-}
-
-/* Inputs */
-
-.join-movement input[type="text"],
-.join-movement input[type="email"],
-.join-movement input[type="tel"],
-.join-movement input[type="date"],
-.join-movement input[type="number"],
-.join-movement textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-.join-movement textarea {
-    resize: vertical;
-}
-
-/* Checkbox groups */
-
-.checkbox-group label {
-    display: block;
-    font-weight: normal;
-    margin-top: 8px;
-}
-
-.checkbox-group input {
-    margin-right: 8px;
-}
-
-/* Submit Button */
-
-.join-movement button {
-    width: 100%;
-    margin-top: 30px;
-    padding: 14px;
-    background: #c9a227;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.join-movement button:hover {
-    background: #a8861d;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    .join-movement {
-        margin: 30px 15px;
-        padding: 25px;
-    }
-
-    .join-movement h2 {
-        font-size: 26px;
-    }
-
 }
