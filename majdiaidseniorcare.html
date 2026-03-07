@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MajdiAid | Documents</title>
+  <title>MajdiAid | Senior Care</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -50,8 +50,66 @@
 
   </ul>
 </nav>
-  
-<section class="section">
+
+<section class="join-movement">
+
+<h2>Senior Care Assistance – MajdiAid</h2>
+<p>Please complete this form if you or someone you know requires senior care support.</p>
+
+<form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+
+<h3>1. Personal Details</h3>
+
+<label>Full Name *</label>
+<input type="text" name="full_name" required>
+
+<label>ID / Passport Number</label>
+<input type="text" name="id_number">
+
+<label>Age *</label>
+<input type="number" name="age" required>
+
+<label>Gender</label>
+<input type="text" name="gender">
+
+<label>Contact Number *</label>
+<input type="tel" name="phone" required>
+
+<label>Email</label>
+<input type="email" name="email">
+
+<label>Residential Address *</label>
+<input type="text" name="address" required>
+
+<label>City / Town *</label>
+<input type="text" name="city" required>
+
+<label>Province *</label>
+<input type="text" name="province" required>
+
+
+<h3>2. Assistance Required</h3>
+
+<div class="checkbox-group">
+
+<label><input type="checkbox" name="services[]" value="Home visits"> Home Visits</label>
+
+<label><input type="checkbox" name="services[]" value="Food assistance"> Food Assistance</label>
+
+<label><input type="checkbox" name="services[]" value="Medication support"> Medication Support</label>
+
+<label><input type="checkbox" name="services[]" value="Transport"> Transport Assistance</label>
+
+<label><input type="checkbox" name="services[]" value="Companionship"> Companionship</label>
+
+</div>
+
+<label>Additional Needs</label>
+<textarea name="additional_needs" rows="4"></textarea>
+
+<button type="submit">Submit Request</button>
+
+</form>
 
 </section>
 
