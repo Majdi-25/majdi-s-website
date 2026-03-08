@@ -73,24 +73,6 @@
   <h2>UbuntuPath Members</h2>
   <p id="memberCount">Loading...</p>
 
-  <script>
-  const baseId = "YOUR_BASE_ID";
-  const tableName = "Members";
-  const token = "YOUR_API_TOKEN";
-
-  fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
-    headers: {
-      Authorization: `Bearer ${token}`
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
-    const count = data.records.length;
-    document.getElementById("memberCount").innerText =
-      count + " members and growing";
-  });
-  </script>
-
     <iframe
       id="JotFormIFrame-260663174462054"
       title="UbuntuPath Membership Registration"
