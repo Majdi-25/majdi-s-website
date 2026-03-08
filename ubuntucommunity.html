@@ -66,9 +66,30 @@
 
 <section class="section">
 
-<h2>Become a Member</h2>
+  <h2>Become a Member</h2>
 
-  <p>Join UbuntuPath and be part of a movement for unity, empowerment, and change in South Africa.</p>
+    <p>Join UbuntuPath and be part of a movement for unity, empowerment, and change in South Africa.</p>
+
+  <h2>UbuntuPath Members</h2>
+  <p id="memberCount">Loading...</p>
+
+  <script>
+  const baseId = "YOUR_BASE_ID";
+  const tableName = "Members";
+  const token = "YOUR_API_TOKEN";
+
+  fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    const count = data.records.length;
+    document.getElementById("memberCount").innerText =
+      count + " members and growing";
+  });
+  </script>
 
     <iframe
       id="JotFormIFrame-260663174462054"
